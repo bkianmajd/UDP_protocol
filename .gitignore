@@ -1,0 +1,11 @@
+# qtcreator generated files
+*build-*
+build-*
+*.creator.user*
+*.pro.user*
+*.pyqtc.user*
+*.qbs.user*
+*.qmlproject.user*
+app_version.h
+phony.c
+ignore/*
