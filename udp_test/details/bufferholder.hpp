@@ -3,9 +3,11 @@
 
 #include <QByteArray>
 
-class BufferCommands{
+namespace babak{
+
+class BufferHolder{
 public:
-    BufferCommands(){
+    BufferHolder(){
 
     }
 
@@ -30,4 +32,7 @@ private:
     QByteArray m_buffer;
 };
 
+using pCommand = std::shared_ptr<BufferHolder>;
+
+}
 #endif // BUFFERCOMMANDS_HPP

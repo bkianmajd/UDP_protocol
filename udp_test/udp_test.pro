@@ -10,9 +10,26 @@ CONFIG -= app_bundle
 
 TEMPLATE = app
 
-SOURCES += main.cpp
+INCLUDEPATH = \
+            details
+
+SOURCES += main.cpp \
+    cmanager.cpp \
+    cshell.cpp \
+    details/cudp.cpp
+
 
 HEADERS += \
-    qudp.hpp \
-    buffercommands.hpp \
-    shelldiag.hpp
+    cshell.h \
+    cmanager.h \
+    details/cstatus.hpp \
+    details/cudp.h \
+    details/udpmanager.hpp \
+    details/cooperator.hpp \
+    details/ifilemock.h \
+    details/ifilereader.h \
+    details/icooperator.h \
+    details/bufferholder.hpp \
+    details/iudpmanager.h
+
+
